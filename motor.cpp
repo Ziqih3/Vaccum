@@ -219,16 +219,16 @@ void motor::speedControl(int speed) {
 
 }
 void motor::leftspeedControl(int speed) {
-  analogWrite(enA, 180);  //enA R2  80
+  analogWrite(enA, 255);  //enA R2  80
   analogWrite(enB, 255);  //enB R1
 
-  analogWrite(enA_L, 180);  //enA_L L1
+  analogWrite(enA_L, 255);  //enA_L L1
 
   analogWrite(enB_L, 255);  //enA_L L2
   
-  analogWrite(enB_Fl, 200);  //enA_L L1
+  analogWrite(enB_Fl, 0);  //enA_L L1
 
-  analogWrite(enB_FR, 110);  //enA_L L2
+  analogWrite(enB_FR, 0);  //enA_L L2
 }
 
  void motor::rightspeedControl(int speed){
